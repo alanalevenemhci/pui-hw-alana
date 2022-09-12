@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.main-container{
+    width: 50%;
+    /*border: 1px solid;*/
+    margin: auto;
+    text-align:center;
+}
+
+.inner{
+    width: 200px;
+    margin:auto;
+    text-align: left;
+    /*border: 1px solid;*/
+}
+
+.innercheckout{
+    width: 200px;
+    margin:auto;
+    /*border: 1px solid;*/
+}
+.inner p, .innercheckout p {
+    margin: 0;
+    padding: 0;
+}
+
+.linebreakremoval{
+    display: inline-block;
+}
+
+a{
+    color:black;
+    text-decoration-line: none;
+
+}
+
+
+.innerproddetail{
+    text-align: left;
+    max-width: 200px;
+    margin: auto;
+}
+
+.logostyle{
+    width: 200px;
+    height: 200px;
+}
+.photosize1{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+}
+
+.photosize2{
+    width: 200px;
+    height:200px;
+    border: 2px solid black;
+
+}
+
+.photosize3{
+    width: 400px;
+    height:400px;
+    border: 2px solid black;
+
+}
+
+.select{
+width: 150px;
+
+}
+
+/*a:hover, */button:hover, .hoverhighlight:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    /*padding: 2px 2px 2px 0px;*/
+}
+
+
