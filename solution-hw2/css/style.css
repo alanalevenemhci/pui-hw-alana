@@ -2,9 +2,34 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.linebreakremoval{
+    display: inline-block;
+}
 
+.logostyle{
+    width: 200px;
+    height: 200px;
+}
 
+.photosize1{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+}
 
+.photosize2{
+    width: 200px;
+    height:200px;
+    border: 2px solid black;
+
+}
+
+.photosize3{
+    width: 400px;
+    height:400px;
+    border: 2px solid black;
+
+}
 
 
 
