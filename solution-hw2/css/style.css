@@ -2,6 +2,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
+
+
+
+
+
+/* css from HW1
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
     text-align: center;
 }
@@ -18,22 +31,22 @@ button {
 
 .main-container{
     width: 50%;
-    /*border: 1px solid;*/
+    border: 1px solid;
     margin: auto;
-    text-align:center;
+    text-align: center;
 }
 
 .inner{
     width: 200px;
     margin:auto;
     text-align: left;
-    /*border: 1px solid;*/
+    border: 1px solid;
 }
 
 .innercheckout{
     width: 200px;
     margin:auto;
-    /*border: 1px solid;*/
+    border: 1px solid;
 }
 .inner p, .innercheckout p {
     margin: 0;
@@ -86,11 +99,11 @@ width: 150px;
 
 }
 
-/*a:hover, */button:hover, .hoverhighlight:hover {
+a:hover, button:hover, .hoverhighlight:hover {
     background-color: yellow;
     color: black;
     font-weight: bold;
-    /*padding: 2px 2px 2px 0px;*/
+    padding: 2px 2px 2px 0px;
 }
 
-
+*/
