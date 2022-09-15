@@ -7,21 +7,26 @@
   </head>
   <body>
 
-    <h1>Product Detail Page</h1>
-    <hr>
-    <a href="prodgallery.html"><img src="assets/logo/logo-01.svg" alt="Bun Bun Logo" class="logostyle"></a>
-    <hr>
-  
-    <a href="prodgallery.html" class="hoverhighlight">PRODUCTS</a>
-    <br>
-    <a href="shoppingcart.html" class="hoverhighlight">CART</a>
+  <div class="flexbox-container">
+    <div class="flexbox-item flexbox-item-1">
+      <a href="prodgallery.html"><img src="assets/logo/logo-01.svg" alt="Bun Bun Logo" class="logostyle"></a>
+      <hr>
+    </div><!--close flexbox item 1-->
 
-    <p>Original cinnamon roll</p>
-    <img src="assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="photosize3">
-    
+    <div class="flexbox-item flexbox-item-2">
+      <a href="prodgallery.html" class="hoverhighlight">PRODUCTS</a>
+      <br>
+      <a href="shoppingcart.html" class="hoverhighlight">CART</a>
+      <p>Original cinnamon roll</p>
+    </div><!--close flexbox item 2-->
+
+    <div class="flexbox-item flexbox-item-3">
+      <img src="assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="photosize3">
+    </div><!--close flexbox item 3-->
+
+    <div class="flexbox-item flexbox-item-4">
     <p>Customize our delicious, handmade cinnamon roll to your liking!</p>
-
-  <!--below: toggle menus-->
+    <!--below: toggle menus-->
     <p>Glazing</p>
     <select name="glazing">
       <option value="keep original">Keep original</option>
@@ -30,19 +35,23 @@
       <option value="chocolate">Double chocolate</option>
     </select>
   
-  <br>
+    <br>
 
-    <p>Pack size</p>
-    <select name="pack size" id="packsize" class="select">
-      <option value="1">1</option>
-      <option value="3">3</option>
-      <option value="6">6</option>
-      <option value="12">12</option>
-    </select>
+      <p>Pack size</p>
+      <select name="pack size">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
 
-  <br>
-    <p class="linebreakremoval">$2.49</p>
-    <button type="button">Add to Cart</button>
-    
+      <br>
+
+      <p class="linebreakremoval">$2.49</p>
+      <button type="button">Add to Cart</button>
+    </div><!--close flexbox item 4-->
+
+
+  </div>   <!--close flexbox-container-->
   </body>
 </html>

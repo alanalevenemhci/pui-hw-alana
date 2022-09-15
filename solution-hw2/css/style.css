@@ -1,14 +1,63 @@
+/*consider making flex container for menu 
+and separate container for other content
+bc the menus are all the same*/
+/*body styles*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*flexbox styles*/
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.flexbox-item {
+    border: 1px solid black;
+}
+
+.flexbox-item-1 {
+
+}
+
+.flexbox-item-2 {
+
+}
+
+.flexbox-item-3 {
+
+}
+
+.flexbox-item-4 {
+
+}
+
+
+/*tag styles*/
+a{
+    color:black;
+    text-decoration-line: none;
+
+}
+button:hover, .hoverhighlight:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 2px 2px 2px 0px;
+}
+
+
+/*class styles*/
 .linebreakremoval{
     display: inline-block;
 }
 
 .logostyle{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
 }
 
 .photosize1{
@@ -30,8 +79,6 @@ body{
     border: 2px solid black;
 
 }
-
-
 
 
 
