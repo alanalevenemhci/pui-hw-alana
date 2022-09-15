@@ -7,12 +7,17 @@ body{
 }
 
 /*flexbox styles*/
-.flexbox-container {
+.flexbox-container-menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    border: 1px solid black;
+    justify-content: space-evenly;
 
+}
+
+.flexbox-container-pagecontent {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
 }
 
 .flexbox-item {
@@ -20,14 +25,20 @@ body{
 }
 
 .flexbox-item-1 {
+    flex-grow: 1;
+    order: 1;
 
 }
 
 .flexbox-item-2 {
+    flex-grow: 2;    
+    order: 2;
 
 }
 
 .flexbox-item-3 {
+    order: 1;
+    order: 2;
 
 }
 
@@ -35,6 +46,12 @@ body{
 
 }
 
+.flexbox-gallery {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+
+}
 
 /*tag styles*/
 a{
@@ -74,8 +91,8 @@ button:hover, .hoverhighlight:hover {
 }
 
 .photosize3{
-    width: 400px;
-    height:400px;
+    width: 600px;
+    height:600px;
     border: 2px solid black;
 
 }
