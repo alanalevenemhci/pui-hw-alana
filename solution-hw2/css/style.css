@@ -1,12 +1,13 @@
 /*-----body styles-----*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
 }
 
 /*-----flexbox styles-----*/
 .flexbox-container-menu {
     display: flex;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     justify-content: space-evenly;
 
 }
@@ -38,21 +39,67 @@ body{
 }
 
 .flexbox-item-4 {
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
-.flexbox-gallery {
-    display: flex;
-    border: 1px solid black;
-    justify-content: space-evenly;
-
-}
 
 /*-----sub-flexbox styles-----*/
 
+/*minimenu(top right)*/
+.flex-minimenu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.flex-minimenu-item1{
+/*    border: 1px solid black;*/
+    text-align: end;
+    flex-basis:100px;
+    margin: 30px;
 
 
+}
+.minimenu-space{
+    margin: 30px;
+}
 
+.flex-minimenu-item2{
+/*    border: 1px solid black;*/
+    flex-basis:100px;
+
+}
+
+.flex-minimenu-item3{
+/*    border: 1px solid black;*/
+    flex-basis:100px;
+
+
+}
+/* end minimenu(top right)*/
+
+/*galleries*/
+.gallery1-container, .gallery2-container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    font-size: 13px;
+
+}
+
+.galleryitem{
+    margin: 5px;
+    padding: 5px;
+}
+
+.galleryitem p{
+    margin: 0%;
+    padding: 0%;
+
+}
 
 /*-----tag styles-----*/
 a{
@@ -60,10 +107,14 @@ a{
     text-decoration-line: none;
 
 }
-.hoverhighlight:hover {
+.hoverhighlight:hover,.galleryitem:hover {
     background-color: yellow;
     color: black;
     font-weight: bold;
+}
+
+hr{
+    border: 2px solid black;
 }
 
 button {
@@ -83,14 +134,20 @@ button:hover{
 
 }
 
+select{
+    width: 80%;
+}
+
 /*-----class styles-----*/
+
+
 .linebreakremoval{
     display: inline-block;
 }
 
 .logostyle{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .photosize1{
@@ -107,18 +164,17 @@ button:hover{
 }
 
 .photosize3{
-    width: 600px;
-    height:600px;
+    width: 700px;
+    height:700px;
     border: 2px solid black;
-
 }
 
 .pagetitle{
-
+    font-size: 1.5em;
 }
 
-.pagemenu{
-
+.underline{
+    text-decoration: underline;
 }
 
 /* css from HW1

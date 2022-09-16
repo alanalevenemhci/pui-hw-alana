@@ -11,14 +11,19 @@
       <div class="flexbox-item flexbox-item-1"><!--open flexbox item 1-->
         <a href="prodgallery.html"><img src="assets/logo/logo-01.svg" alt="Bun Bun Logo" class="logostyle"></a>
       </div><!--close flexbox item 1-->
-
       <div class="flexbox-item flexbox-item-2"><!--open flexbox item 2-->
-        <div class="flexminimenu"><!--open flex minimenu container-->
-          <a href="prodgallery.html" class="hoverhighlight">PRODUCTS</a>
-          <br>
-          <a href="shoppingcart.html" class="hoverhighlight">CART</a>
-          <p class="pagetitle">Original cinnamon roll</p>
-        </div><!--close flexminimenu container-->
+        <div class="flex-minimenu-container"><!--open flex minimenu container-->
+          <div class="flex-minimenu-item1">
+              <a href="prodgallery.html" class="hoverhighlight minimenu-space">PRODUCTS</a>
+              <a href="shoppingcart.html" class="hoverhighlight minimenu-space">CART</a>
+          </div><!--close flex-minimenu-item1-->
+          <div class="flex-minimenu-item2">
+            <hr>
+          </div><!--close flex-minimenu-item2-->
+          <div class="flex-minimenu-item3">
+            <p class="pagetitle">Original cinnamon roll</p>
+          </div><!--close flex-minimenu-item3-->
+        </div><!--close flex-minimenu-container-->
       </div><!--close flexbox item 2-->
     </div><!--close flexbox-container-menu-->
 
@@ -28,9 +33,11 @@
       </div><!--close flexbox item 3-->
 
       <div class="flexbox-item flexbox-item-4"><!--open flexbox item 4-->
-      <p>Customize our delicious, handmade cinnamon roll to your liking!</p>
+      
+      
+        <p>Customize our delicious, handmade cinnamon roll to your liking!</p>
       <!--below: toggle menus-->
-      <p>Glazing</p>
+      <p>Glazing:</p>
       <select name="glazing">
         <option value="keep original">Keep original</option>
         <option value="sugar milk">Sugar milk</option>
@@ -40,7 +47,7 @@
     
       <br>
 
-        <p>Pack size</p>
+        <p>Pack size:</p>
         <select name="pack size">
           <option value="1">1</option>
           <option value="3">3</option>
