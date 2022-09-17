@@ -18,6 +18,18 @@ body{
 /*    border: 1px solid black;*/
 }
 
+.flexbox-item-checkout-outercontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.flexbox-item-checkout-outercontainer-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .flexbox-item {
 /*    border: 1px solid black;*/
 }
@@ -47,25 +59,24 @@ body{
     flex-basis:30%;
 }
 
-.checkout-outercontainer{
-    display:flex;
-    border: 1px solid black;
-    flex-grow: 2;
-    flex-basis:70%;
-    flex-direction: column;
-}
 .checkout-outercontainer-item{
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.checkout-outercontainer button{
-    width: 150px;
-}
 
 .alignright{
-    text-align: justify;
+    text-align: right;
 
 }
+
+.flexbox-img-text-group{
+    display: flex;
+    flex-direction: row;
+    
+}
+
 
 /*-----sub-flexbox styles-----*/
 
@@ -137,6 +148,7 @@ a{
 
 hr{
     border: 2px solid black;
+    width: 100%;
 }
 
 button {
@@ -180,6 +192,7 @@ select{
     width: 100px;
     height:100px;
     border: 3px solid black;
+    margin-right: 24px;
 }
 
 .photosize2{
@@ -201,6 +214,20 @@ select{
 
 .underline{
     text-decoration: underline;
+}
+
+.flexbox-item-column{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.flexbox-item emptyitem{
+    flex-grow: 1;
 }
 
 /* css from HW1
