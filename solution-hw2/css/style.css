@@ -22,6 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-grow: 2;
+    margin-right: 10%;
 }
 
 .flexbox-item-checkout-outercontainer-item{
