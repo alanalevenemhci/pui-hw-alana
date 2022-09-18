@@ -149,8 +149,10 @@ a{
 
 hr{
     border: 2px solid black;
-    width: 100%;
+    width: 700px;
+    margin: initial;
 }
+
 
 button {
     border: 1px solid black;
@@ -230,6 +232,15 @@ p{
 .flexbox-item emptyitem{
     flex-grow: 1;
 }
+
+.checkout-remove{
+    font-size: 12px;
+    text-decoration-line: underline;
+    font-weight: bold;
+
+}
+
+
 
 /* css from HW1
 body{
