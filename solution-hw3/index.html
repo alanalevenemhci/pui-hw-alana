@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Product Detail Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/calculate_prices.js" defer></script>
   </head>
   <body>
 
@@ -38,26 +39,18 @@
         <p>Customize our delicious, handmade cinnamon roll to your liking!</p>
       <!--below: toggle menus-->
       <p>Glazing:</p>
-      <select name="glazing">
-        <option value="keep original">Keep original</option>
-        <option value="sugar milk">Sugar milk</option>
-        <option value="vanilla milk">Vanilla milk</option>
-        <option value="chocolate">Double chocolate</option>
+      <select id="glazing-select" name="glazing" onchange="glazingChange()">
       </select>
     
       <br>
 
         <p>Pack size:</p>
-        <select name="pack size">
-          <option value="1">1</option>
-          <option value="3">3</option>
-          <option value="6">6</option>
-          <option value="12">12</option>
+        <select id="pack-size" name="pack size" onchange="glazingChange(this)">
         </select>
 
         <br>
 
-        <p class="linebreakremoval">$2.49</p>
+        <p id="final-price" class="linebreakremoval">$2.49</p>
         <button type="button">Add to Cart</button>
       </div><!--close flexbox item 4-->
     </div><!--close flexbox-container-content-->
