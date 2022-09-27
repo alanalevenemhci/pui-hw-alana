@@ -1,0 +1,341 @@
+
+/*-----body styles-----*/
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+}
+
+/*-----flexbox styles-----*/
+.flexbox-container-menu {
+    display: flex;
+/*    border: 1px solid black;*/
+    justify-content: space-evenly;
+
+}
+
+.flexbox-container-pagecontent {
+    display: flex;
+    justify-content: space-evenly;
+/*    border: 1px solid black;*/
+}
+
+.flexbox-item-checkout-outercontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-right: 10%;
+}
+
+.flexbox-item-checkout-outercontainer-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexbox-item {
+/*    border: 1px solid black;*/
+}
+
+.flexbox-item-1 {
+    flex-grow: 1;
+    flex-basis:30%;
+
+}
+
+.flexbox-item-2 {
+    flex-grow: 2;    
+    flex-basis:70%;
+
+}
+.flexbox-item-3 {
+/*placeholder*/
+}
+.flexbox-item-4 {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+/*-----sub-flexbox:checkout - used flexbox-container-pagecontent-----*/
+.emptyitem{
+    flex-grow: 1;
+    flex-basis:30%;
+}
+
+.checkout-outercontainer-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.alignright{
+    text-align: right;
+
+}
+
+.flexbox-img-text-group{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+/*-----sub-flexbox styles-----*/
+
+/*minimenu(top right)*/
+.flex-minimenu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.flex-minimenu-item1{
+/*    border: 1px solid black;*/
+    text-align: end;
+    flex-basis:100px;
+    margin: 30px;
+
+
+}
+.minimenu-space{
+    margin: 30px;
+}
+
+.flex-minimenu-item2{
+/*    border: 1px solid black;*/
+    flex-basis:100px;
+
+}
+
+.flex-minimenu-item3{
+/*    border: 1px solid black;*/
+    flex-basis:100px;
+
+
+}
+/* end minimenu(top right)*/
+
+/*galleries*/
+.gallery1-container, .gallery2-container {
+    display: flex;
+/*    border: 1px solid black;*/
+    justify-content: space-evenly;
+    font-size: 13px;
+
+}
+
+.galleryitem{
+    margin: 5px;
+    padding: 5px;
+}
+
+.galleryitem p{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/*-----tag styles-----*/
+a{
+    color:black;
+    text-decoration-line: none;
+
+}
+.hoverhighlight:hover,.galleryitem:hover, .checkout-outercontainer button:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+hr{
+    border: 2px solid black;
+    width: 700px;
+    margin: initial;
+}
+
+
+button {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+select{
+    width: 80%;
+}
+
+/*-----class styles-----*/
+
+
+.linebreakremoval{
+    display: inline-block;
+}
+
+.linebreakremovals{
+    display: inline;
+}
+
+.logostyle{
+    width: 350px;
+    height: 350px;
+}
+
+.photosize1{
+    width: 100px;
+    height:100px;
+    border: 3px solid black;
+    margin-right: 24px;
+}
+
+.photosize2{
+    width: 200px;
+    height:200px;
+    border: 2px solid black;
+
+}
+
+.photosize3{
+    width: 700px;
+    height:700px;
+    border: 2px solid black;
+}
+
+.pagetitle{
+    font-size: 1.5em;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.flexbox-item-column{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.flexbox-item emptyitem{
+    flex-grow: 1;
+}
+
+.checkout-remove{
+    font-size: 12px;
+    text-decoration-line: underline;
+    font-weight: bold;
+
+}
+
+
+
+/* css from HW1
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.main-container{
+    width: 50%;
+    border: 1px solid;
+    margin: auto;
+    text-align: center;
+}
+
+.inner{
+    width: 200px;
+    margin:auto;
+    text-align: left;
+    border: 1px solid;
+}
+
+.innercheckout{
+    width: 200px;
+    margin:auto;
+    border: 1px solid;
+}
+.inner p, .innercheckout p {
+    margin: 0;
+    padding: 0;
+}
+
+.linebreakremoval{
+    display: inline-block;
+}
+
+a{
+    color:black;
+    text-decoration-line: none;
+
+}
+
+
+.innerproddetail{
+    text-align: left;
+    max-width: 200px;
+    margin: auto;
+}
+
+.logostyle{
+    width: 200px;
+    height: 200px;
+}
+.photosize1{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+}
+
+.photosize2{
+    width: 200px;
+    height:200px;
+    border: 2px solid black;
+
+}
+
+.photosize3{
+    width: 400px;
+    height:400px;
+    border: 2px solid black;
+
+}
+
+.select{
+width: 150px;
+
+}
+
+a:hover, button:hover, .hoverhighlight:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 2px 2px 2px 0px;
+}
+
+*/
