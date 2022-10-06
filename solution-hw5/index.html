@@ -1,32 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
+    <title>Product Detail Page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/rollsData.js" defer></script>
-    <script src="js/checkout.js" defer></script>
+    <script src="js/roll.js" defer></script>
   </head>
   <body>
-
-    <!--Template that defines what an entry in the cart should look like-->
-    <!--Wont appear on the page by default. It's used in the checkout.js script-->
-    <template id="rollCartRow">
-    <div class="flexbox-item-checkout-outercontainer-item"><!--open flexbox outer container item-->
-      <div class="flexbox-img-text-group"> 
-        <img id="productImage" src="assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" class="photosize1">
-        <div class="flexbox-item-column">
-          <p id="rollName">RollName</p>
-          <p id="glazingName">GlazingName</p>
-          <p id="packSize">PackSize</p>
-        </div>
-      </div>  
-      <p id="calculatedPrice">CalculatedPrice</p>
-    </div><!--close checkout-outercontainer item-->
-    <p class="checkout-remove" id="checkoutRemove">Remove</p>
-    <br>
-  </template>
 
     <div class="flexbox-container-menu"><!--open flexbox container menu container-->
       <div class="flexbox-item flexbox-item-1"><!--open flexbox item 1-->
@@ -42,29 +23,38 @@
             <hr>
           </div><!--close flex-minimenu-item2-->
           <div class="flex-minimenu-item3">
-            <p class="pagetitle">Shopping cart</p>
+            <p class="pagetitle" id="roll-name">Original cinnamon roll</p>
           </div><!--close flex-minimenu-item3-->
         </div><!--close flex-minimenu-container-->
       </div><!--close flexbox item 2-->
     </div><!--close flexbox-container-menu-->
 
     <div class="flexbox-container-pagecontent"><!--open flexbox pagecontent container-->
+      <div class="flexbox-item flexbox-item-3"><!--open flexbox item 3-->
+        <img src="assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="photosize3" id="product-image">
+      </div><!--close flexbox item 3-->
+
+      <div class="flexbox-item flexbox-item-4"><!--open flexbox item 4-->
       
       
-      <div class="flexbox-item emptyitem"><!--open flexbox empty item-->
-      </div><!--close flexbox empty item-->
-     
-      <div class="flexbox-item-checkout-outercontainer"><!--open flexbox outer container-->
-        <div id="cartItems">
-        </div>
-        <hr>  
-        <div class="alignright">
-          <p id="totalPrice">Total: $29.94</p>
-          <button type="button">Checkout</button>
-        </div>
+        <p>Customize our delicious, handmade cinnamon roll to your liking!</p>
+      <!--below: toggle menus-->
+      <p>Glazing:</p>
+      <select id="glazing-select" name="glazing" onchange="glazingChange()">
+      </select>
+    
+      <br>
 
-      </div><!--close checkoutoutercontainer-->
+        <p>Pack size:</p>
+        <select id="pack-size" name="pack size" onchange="glazingChange(this)">
+        </select>
 
-    </div><!--close flexbox-container-pagecontent-->
+        <br>
+
+        <p id="final-price" class="linebreakremoval">$2.49</p>
+        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+      </div><!--close flexbox item 4-->
+    </div><!--close flexbox-container-content-->
+
   </body>
 </html>
